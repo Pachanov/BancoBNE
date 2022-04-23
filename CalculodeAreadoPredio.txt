@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+
+
+// 1)Construa um algoritmo que calcula o tamanho de um edifício com base na altura de cada andar e o número de andares informados pelo usuário.
+
+int main(void) {
+  float alturaAndar, quantidadAndares, alturaTotal;
+
+  printf("\nAltura do andar:");
+  scanf("%f", &alturaAndar);
+
+  printf("\nQuantidades de andares que o prédio terá:");
+  scanf("%f", &quantidadAndares);
+
+  system("clear");
+    
+  alturaTotal = quantidadAndares * alturaAndar;
+
+  printf("O predio tem uma altura total: %2.f m", alturaTotal);
+
+  return 0;
+}
