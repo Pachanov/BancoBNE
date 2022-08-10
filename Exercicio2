@@ -1,0 +1,21 @@
+//2)Construa um algoritmo que receba do usuário 4 números. Imprima o maior, o menor e a média deles.
+
+int main(void) {
+   float numero1, numero2, numero3, numero4, media;
+
+printf("\nDigite o primero numero:");
+scanf("%f", &numero1);
+
+printf("\nDigite o segundo numero:");
+scanf("%f", &numero2);
+
+printf("\nDigite o terceiro numero:");
+scanf("%f", &numero3);
+
+printf("\nDigite o quarto numero:");
+scanf("%f", &numero4);
+
+media =(numero1+numero2+numero3+numero4)/4;
+printf("\n A Media e: %2.f", media);
+
+}
