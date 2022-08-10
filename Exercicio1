@@ -1,49 +1,29 @@
-int main(){
-system("clear");
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
-int vetorA[11] = {1,3,35,40,85,123,121,209,200,305,350};
 
-    int contadorPar = 0;
-    for (int i = 0; i < 11; i++) {
-        if(vetorA[i] % 2 == 0){
-           contadorPar++;
-        }
-    }
+int main() {
 
-    int vetorPar[contadorPar];
-    int posicaoPar = 0;
-    for (int i = 0; i < 11; i++) {
-        if(vetorA[i] % 2 == 0){
-           vetorPar[posicaoPar] = vetorA[i];
-           posicaoPar++;
-        }
-    }
 
-    printf("Valores do Vetor Par: ");
-    for (int i = 0; i < contadorPar; i++) {
-        printf("%d ", vetorPar[i]);
-    }
+// 1)Construa um algoritmo que calcula o tamanho de um edifício com base na altura de cada andar e o número de andares informados pelo usuário.
 
-    printf("\n\n");
+int main(void) {
+  float alturaAndar, quantidadAndares, alturaTotal;
 
-   int contadorImpar = 0;
-    for (int i = 0; i < 11; i++) {
-        if(vetorA[i] % 2 == 1){
-           contadorImpar++;
-        }
-    }
+  printf("\nAltura do andar:");
+  scanf("%f", &alturaAndar);
 
-    int vetorImpar[contadorImpar];
-    int posicaoImpar = 0;
-    for (int i = 0; i < 11; i++) {
-        if(vetorA[i] % 2 == 1){
-           vetorImpar[posicaoImpar] = vetorA[i];
-           posicaoImpar++;
-        }
-    }
+  printf("\nQuantidades de andares que o prédio terá:");
+  scanf("%f", &quantidadAndares);
 
-    printf("Valores do Vetor Impar: ");
-    for (int i = 0; i < contadorImpar; i++) {
-       printf("%d ", vetorImpar[i]);
-    }
+  system("clear");
+    
+  alturaTotal = quantidadAndares * alturaAndar;
+
+  printf("O predio tem uma altura total: %2.f m", alturaTotal);
+
+  
+  return 0;
 }
