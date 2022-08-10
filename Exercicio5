@@ -1,0 +1,25 @@
+//5)Construa um algoritmo que identifique a quantidade de vogais a partir de um texto informado pelo usuário.
+  
+ #include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  
+char string[45];
+int qtVogais,c,lente;
+qtVogais = 0;
+
+printf("Digite uma Frase:");
+gets(string);
+
+lente = strlen(string);
+
+  for(c = 0; c < lente; c++){
+  string[c] = tolower(string[c]);
+    if(string[c] == 'a' || string[c] == 'e' || string[c] == 'i' || string[c] == 'o' || string[c] == 'u'){
+      qtVogais += 1;
+    }
+
+  }
+  printf("Nessa frase existe(m) %d vogais", qtVogais);
+}
